@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        body{
+            height: 3000px;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            margin: 12px;
+            color: blue;
+        }
+        .sticky{
+            position: sticky;
+            top: 0px;
+            width: auto;
+            background-color: yellowgreen;
+            height: 120px;
+        }
+        .relative{
+            position: relative;
+            background-color: chartreuse;
+        }
+        .fixed{
+            position: fixed;
+            background-color: orangered;
+
+        }
+    </style>
+</head>
+<body>
+    <h2 class="box sticky">Sticky(acts according to scrollbar)</h2>
+
+    <h2 class="box relative">Relative(acts according to parent)</h2>
+
+    <h2 class="box fixed">Fixed(fixed on screen)</h2>
+</body>
+</html>

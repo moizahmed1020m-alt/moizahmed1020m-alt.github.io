@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+       .box{
+        width: 120px;
+        height: 120px;
+        color: azure;
+        position: static;
+        justify-content: center;
+        background: linear-gradient( to right ,red , pink);
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        border-radius: 8px;
+        size: 100px;
+
+       }
+      .move{
+               position: relative;
+               top: 30px;
+               bottom: 30px;
+               
+     }
+    </style>
+</head>
+<body>
+    <h1>normal box(static)</h1>
+  <div class="box">static</div>
+  <h2>Normal box(relative)</h2>
+  <div class="box move">relative</div>
+</body>
+</html>

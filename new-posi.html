@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 120px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 12px;
+        }
+        #static{
+            position: static;
+            top: 20px;
+            left: 50px;
+        }
+        #relative{
+            position: relative;
+        }
+        .container{
+            width: 300px;
+            height: 200px;
+            border: 3px solid black;
+            border-radius: 5px;
+            margin: 20px;
+            position: relative;
+        }
+        
+        #absolute{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        #fixed{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+        #sticky{
+            position: sticky;
+            top: 0;
+            background: lightgray;
+            width: auto;
+        }
+        body{
+             height: 1200px;
+              /* for scrolling   */  
+        }
+    </style>
+</head>
+<body>
+  <h2>1. Static (By default)</h2>
+  <div class="box" id="static">Static</div>
+    
+  <h2>2.relative (moves from orignal place)</h2>
+  <div class="box" id="relative">relative</div>
+
+  <h2>3.absolute(moves inside container)</h2>
+  <div class="container"></div>
+  <div class="box" id="absolute">absolute</div>
+
+  <h2>4.Fixed(fixed on screen)</H2>
+  <div class="box" id="fixes">fixed</div>
+    
+  <h2>5.sticky(adjust as per scroll bar)</h2>
+  <div class="box" id="sticky">sticky</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
